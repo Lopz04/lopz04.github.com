@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    background-color: #17129e;
+    color: white;
+    font-weight: 200;
+}
+
+header p, h1{
+    width: 400px;
+    display: inline-block;
+}
+
+.nombre{
+    font-weight: 700;
+}
+
+.desc{
+    font-weight: 700;
+    background-color: #9000ff;
+    padding: 10px;
+    text-align: center;
+    color: #ffffffd0;
+}
+
+.info{
+    font-size: 30px;
+    width: 900px;
+    height: 300px;
+    margin: auto;
+}
+
+.cert a{
+    text-decoration: none;
+    color: #160094;
+}
+
+.otr {
+    padding-bottom: 30px;
+}
+
+.imgn {
+    height: auto;
+    width: 20%;
+    display: inline-block;
+}
+
+img {
+    width: 300px;
+}
+
+.acad {
+    vertical-align: top;
+    width: 70%;
+    display: inline-block;
+}
