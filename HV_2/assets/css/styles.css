@@ -52,3 +52,24 @@ video {
     border-color: rgba(137, 43, 226, 0.649);
     color: whitesmoke;
 }
+
+.nombre {
+    animation: animacion 2.5s steps(38), transparent .5s step-end infinite alternate;
+    width: 6.5em;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 9ch;
+    border-right: 3px solid;
+}
+
+@keyframes animacion{
+    from{
+        width: 0px;
+    }
+}
+
+@keyframes transparent{
+    50%{
+        border-color: transparent;
+    }
+}
