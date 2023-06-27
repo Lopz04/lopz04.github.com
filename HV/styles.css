@@ -35,14 +35,16 @@ header p, h1{
     margin: auto;
 }
 
+
 .cert a{
     text-decoration: none;
     color: #160094;
 }
 
 .otr {
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
+
 
 .imgn {
     height: auto;
@@ -59,3 +61,4 @@ img {
     width: 70%;
     display: inline-block;
 }
+
