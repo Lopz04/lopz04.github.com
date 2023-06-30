@@ -3,10 +3,11 @@ html {
     padding: 0;
     font-family: 'Merriweather Sans', sans-serif;
     background: linear-gradient(to right, #2d0033, #000000, #2d0033);
+    scroll-behavior: smooth;
 }
 
 .inicio {
-    height: 900px;
+    height: 100vh;
     width: cover;
     display: flex;
     align-items: center;
@@ -14,12 +15,14 @@ html {
     background: linear-gradient(to right, #2d0033, #000000, #2d0033);
 }
 
+
+
 video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 900px;
+    height: 100vh;
     object-fit: cover;
     opacity: .1;
 }
@@ -72,4 +75,155 @@ video {
     50%{
         border-color: transparent;
     }
+}
+
+.btn-neon{
+    color: white;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    letter-spacing: 2px;
+    font-size: 24px;
+    text-decoration: none;
+    overflow: hidden;
+    background-color: #3600693f;
+    transition: 0.2s;
+    margin-left: 10px;
+}
+
+.btn-neon:hover{
+    background-color: rgb(137, 43, 226);
+    box-shadow: 0 0 1px rgb(137, 43, 226), 0 0 1px rgb(137, 43, 226), 0 0 20px rgb(137, 43, 226);
+    transition-delay: 1s;
+}
+
+.btn-neon span{
+    position: absolute;
+    display: block;
+}
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,rgb(149, 0, 255));
+}
+
+.btn-neon:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+
+#span3 {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, rgb(149, 0, 255));
+}
+
+.btn-neon:hover #span3 {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+#span2 {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, rgb(149, 0, 255));
+}
+
+.btn-neon:hover #span2 {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+#span4 {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, rgb(149, 0, 255));
+}
+
+.btn-neon:hover #span4 {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+
+.estudios {
+    height: 100vh;
+    background: radial-gradient(circle, rgba(58, 8, 79, 1) 0%, rgba(35, 0, 47, 1) 100%);
+    font-size: 30px;
+}
+
+.contenido{
+    text-align: center;
+}
+
+.content-e{
+    margin-top: 15%;
+    width: 40%;
+    display: inline-block;
+    text-align: left;
+    background-color: #ffffff06;
+    border: solid rgba(255, 255, 255, 0.104);
+    border-radius: 50px;
+    color: white;
+    margin-right: 50px;
+}
+
+.content-e h2 {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(188, 116, 255);
+}
+
+.datos {
+    margin: 70px;
+    font-size: 30px;
+    padding-bottom: 8px;
+    color: whitesmoke;
+
+}
+
+.datos dt{
+
+    color: rgb(188, 116, 255);
+
+}
+
+.content-e2 {
+    margin-top: 15%;
+    width: 40%;
+    display: inline-block;
+    text-align: left;
+    background-color: #ffffff06;
+    border: solid rgba(255, 255, 255, 0.104);
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+}
+
+.content-e2 h2 {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(188, 116, 255);
+}
+
+.content-e2 a {
+    text-decoration: none;
+    text-decoration-line: underline;
+    color: rgb(188, 116, 255);
+}
+
+.content-e2 dt {
+    text-decoration: none;
+    color: whitesmoke;
 }
