@@ -8,7 +8,7 @@ html {
 
 .inicio {
     height: 100vh;
-    width: cover;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -169,7 +169,7 @@ video {
 
 .content-e{
     margin-top: 15%;
-    width: 40%;
+    width: 35%;
     display: inline-block;
     text-align: left;
     background-color: #ffffff06;
@@ -186,8 +186,8 @@ video {
 }
 
 .datos {
-    margin: 70px;
-    font-size: 30px;
+    margin: 30px;
+    font-size: 28px;
     padding-bottom: 8px;
     color: whitesmoke;
 
@@ -201,7 +201,7 @@ video {
 
 .content-e2 {
     margin-top: 15%;
-    width: 40%;
+    width: 35%;
     display: inline-block;
     text-align: left;
     background-color: #ffffff06;
@@ -227,3 +227,33 @@ video {
     text-decoration: none;
     color: whitesmoke;
 }
+
+.proyectos {
+    height: 100vh;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(214, 214, 214, 1) 100%);
+    font-size: 30px;
+}
+
+.carrusel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+}
+
+.proyecto {
+    flex: 1 0 auto;
+    margin: 0 3px;
+    width: 100vh;
+    background-color: black;
+    height: 100vh;
+}
+
+.proyecto1 {
+    flex: 1 0 auto;
+    margin: 0 5px;
+    width: 100vh;
+    height: 100vh;
+}
+
+
+
