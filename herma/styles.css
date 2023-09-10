@@ -1,0 +1,79 @@
+#box {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color: #f7f0e9;
+}
+
+.bg {
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    width: 110%;
+    height: 110%;
+    background-image: url(bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wave-top {
+    position: absolute;
+    top: -5%;
+    left: -15%;
+    width: 110%;
+    height: 110%;
+    background-image: url(wave_top.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wave-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 110%;
+    height: 110%;
+    background-image: url(wave_right.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wave-bottom {
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    width: 110%;
+    height: 110%;
+    background-image: url(wave_bottom.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wave-bottom-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(wave_bottom_right.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wave-left {
+    position: absolute;
+    top: 0;
+    left: -1%;
+    width: 120%;
+    height: 120%;
+    background-image: url(wave_left.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
