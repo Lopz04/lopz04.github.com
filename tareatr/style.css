@@ -1,0 +1,95 @@
+body{
+    background: radial-gradient(#485563, #29323c);
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img{
+    width: 50%;
+    border-radius: 50%;
+}
+
+
+
+
+h1{
+    text-decoration:solid underline rgb(85, 125, 163);
+}
+
+#tareas p,ul{
+    list-style-type: none;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+#Peligros p{
+    text-align: justify;
+}
+
+hr{
+    margin-top: 2%;
+}
+
+li{
+    margin-top: 8px;
+}
+
+#Actos{
+    width: 49%;
+    border: solid 4px rgb(94, 94, 94);
+    border-radius: 5%;
+    padding: 10px;
+}
+
+#Condicion{
+    width: 49%;
+    border: solid 4px rgb(94, 94, 94);
+    border-radius: 5%;
+    padding: 10px;
+}
+
+#AYC{
+    display: flex; 
+    justify-content: space-between; 
+
+}
+
+#AYC{
+    text-align: justify;
+}
+table{
+    width: 100%;
+
+
+}
+th, td {
+    border: solid 1px #4f6d6d;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+td:hover{
+    background-color:#222222;
+    border-radius: 10px;
+
+}
+
+a{
+    text-decoration:  none;
+    color: white;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+#nom{
+    color: #61abfa49;
+}
