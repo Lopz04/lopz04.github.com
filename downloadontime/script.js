@@ -1,15 +1,21 @@
 function calcularTiempo() {
-    velocidad = parseFloat(document.getElementById("velocidad").value);
-    peso = parseFloat(document.getElementById("peso").value);
+    // Obtener los valores del formulario
+    const velocidad = parseFloat(document.getElementById("velocidad").value); // En MB/s
+    const peso = parseFloat(document.getElementById("peso").value); // En GB
 
-    pesoEnMB = peso * 1024;
+    // Validar entradas
+    if (isNaN(velocidad) || isNaN(peso) || velocidad <= 0 || peso <= 0) {
+        document.getElementById("tiempo").textContent = "Por favor, ingrese valores válidos.";
+        return;
+    }
 
-    tiempoEnSegundos = pesoEnMB / velocidad;
+    // Calcular tiempo de descarga en segundos
+    const tiempoSegundos = (peso * 1024) / velocidad; // Convertir GB a MB y dividir por velocidad
 
-    tiempoEnMinutos = tiempoEnSegundos / 60;
+    // Convertir tiempo a minutos
+    const tiempoMinutos = tiempoSegundos / 60;
 
-    resultado = "Tiempo estimado de descarga: " + tiempoEnMinutos.toFixed(2) + " minutos";
-
+    // Mostrar el resultado
+    const resultado = `Tiempo estimado de descarga: ${tiempoMinutos.toFixed(2)} minutos`;
     document.getElementById("tiempo").textContent = resultado;
 }
-

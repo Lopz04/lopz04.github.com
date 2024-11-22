@@ -6,31 +6,35 @@ html, body {
 
 
 body{
-        background: #01947D;
-        background: linear-gradient(135deg, #01947D, #0D3E3E);
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    background: #01947D;
+    background: linear-gradient(135deg, #01947D, #0D3E3E);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.recuadro{
+.recuadro {
     background-color: rgba(255, 255, 255, 0.404);
     backdrop-filter: blur(10px);
     height: 70vh;
     width: 100vh;
     border-radius: 20px;
     color: rgb(221, 255, 184);
+
+    display: flex;
+    flex-direction: column;
 }
 
-#headerrec{
+#headerrec {
     text-align: center;
     background-color: rgba(0, 103, 62, 0.411);
     backdrop-filter: blur(10px);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    padding: 1vh;
 }
 
-#headerrec h1{
+#headerrec h1 {
     text-decoration: underline wavy rgb(0, 96, 71);
     margin-top: 8px;
     font-size: 4vh;
@@ -38,13 +42,8 @@ body{
     font-weight: lighter;
 }
 
-#headerrec p{
+#headerrec p {
     font-size: 2vh;
-}
-
-span{
-    color: rgb(13, 99, 92);
-    text-decoration: underline solid rgb(0, 127, 117) 2px;
 }
 
 .calculadora {
@@ -54,6 +53,49 @@ span{
     flex-direction: column;
     text-align: center;
     font-size: 120%;
- 
-    padding: 10%;
+    flex-grow: 1;
+    padding: 2vh;
+}
+
+span{
+    color: rgb(13, 99, 92);
+    text-decoration: underline solid rgb(0, 127, 117) 2px;
+    text-underline-offset: 2px;
+}
+
+
+input {
+    border-radius: 50px;
+    height: 3vh;
+    width: 20vw;
+}
+
+label {
+    font-size: 130%;
+}
+
+#tiempo {
+    font-size: 120%;
+}
+
+button {
+    background-image: linear-gradient(to right, #134E5E 0%, #71B280 51%, #134E5E 100%)
+}
+
+button {
+    padding: 2vh 2vw;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #f5f5f5;
+    box-shadow: 0 0 20px #00000093;
+    border-radius: 10px;
+    display: block;
+}
+
+button:hover {
+    background-position: right center;
+    color: #ffffff;
+    text-decoration: none;
 }
