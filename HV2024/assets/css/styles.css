@@ -57,17 +57,21 @@ video {
 }
 
 .nombre {
-    animation: animacion 2.5s steps(38), transparent .5s step-end infinite alternate;
-    width: 6.5em;
+    animation: animacion 2.5s steps(40), transparent .5s step-end infinite alternate;
+    width: 100%;
     white-space: nowrap;
     overflow: hidden;
     font-size: 9ch;
     border-right: 3px solid;
 }
 
-@keyframes animacion{
-    from{
-        width: 0px;
+@keyframes animacion {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
     }
 }
 
