@@ -1,10 +1,30 @@
+/* ==================================================================================== */
+/*                                  CONFIGURACIÓN GLOBAL                                 */
+/* ==================================================================================== */
+
 html {
     margin: 0;
     padding: 0;
-    font-family: 'Merriweather Sans', sans-serif;
-    background: linear-gradient(to right, #2d0033, #000000, #2d0033);
     scroll-behavior: smooth;
+    font-family: 'Merriweather Sans', sans-serif;
+    background-image: radial-gradient(circle 70vw at 50% 50.2%, rgb(62, 0, 121) 0.1%, rgba(3, 1, 50, 1) 100.2%);
+    color: aliceblue;
+    text-align: center;
+    line-height: 1.6;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: #0b0612;
+    color: #e4d7ff;
+}
+
+
+/* ==================================================================================== */
+/*                                      INTRODUCCIÓN                                      */
+/* ==================================================================================== */
 
 .inicio {
     height: 100vh;
@@ -14,8 +34,6 @@ html {
     justify-content: center;
     background: linear-gradient(to right, #2d0033, #000000, #2d0033);
 }
-
-
 
 video {
     position: absolute;
@@ -27,7 +45,7 @@ video {
     opacity: .1;
 }
 
-.introduccion{
+.introduccion {
     width: 600px;
     padding: 30px;
     text-align: center;
@@ -35,7 +53,7 @@ video {
     z-index: 2;
 }
 
-.introduccion h1{
+.introduccion h1 {
     font-size: 90px;
     color: blueviolet;
 }
@@ -47,14 +65,17 @@ video {
 
 .introduccion button {
     font-size: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
-    background-color: transparent;
-    border: solid 0.1;
+    margin: 0 10px;
     padding: 10px;
-    border-color: rgba(137, 43, 226, 0.649);
+    background-color: transparent;
+    border: .1px solid rgba(137, 43, 226, 0.649);
     color: whitesmoke;
 }
+
+
+/* ==================================================================================== */
+/*                                  EFECTO MÁQUINA DE ESCRIBIR                             */
+/* ==================================================================================== */
 
 .nombre {
     animation: animacion 2.5s steps(38), transparent .5s step-end infinite alternate;
@@ -65,97 +86,73 @@ video {
     border-right: 3px solid;
 }
 
-@keyframes animacion{
-    from{
-        width: 0px;
-    }
+@keyframes animacion {
+    from { width: 0px; }
 }
 
-@keyframes transparent{
-    50%{
-        border-color: transparent;
-    }
+@keyframes transparent {
+    50% { border-color: transparent; }
 }
 
-.btn-neon{
+
+/* ==================================================================================== */
+/*                                       BOTONES NEÓN                                     */
+/* ==================================================================================== */
+
+.btn-neon {
     color: white;
     position: relative;
-    display: inline-block;
     padding: 15px 30px;
     letter-spacing: 2px;
     font-size: 24px;
-    text-decoration: none;
-    overflow: hidden;
     background-color: #3600693f;
-    transition: 0.2s;
+    text-decoration: none;
+    display: inline-block;
+    overflow: hidden;
+    transition: .2s;
     margin-left: 10px;
 }
 
-.btn-neon:hover{
+.btn-neon:hover {
     background-color: rgb(137, 43, 226);
-    box-shadow: 0 0 1px rgb(137, 43, 226), 0 0 1px rgb(137, 43, 226), 0 0 20px rgb(137, 43, 226);
+    box-shadow: 0 0 20px rgb(137, 43, 226);
     transition-delay: 1s;
 }
 
-.btn-neon span{
+.btn-neon span {
     position: absolute;
     display: block;
 }
-#span1{
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg,transparent,rgb(149, 0, 255));
-}
 
-.btn-neon:hover #span1{
-    left: 100%;
-    transition: 1s;
+/* Líneas animadas del botón */
+#span1 {
+    top: 0; left: -100%; width: 100%; height: 2px;
+    background: linear-gradient(90deg, transparent, rgb(149, 0, 255));
 }
+.btn-neon:hover #span1 { left: 100%; transition: 1s; }
 
 #span3 {
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
+    bottom: 0; right: -100%; width: 100%; height: 2px;
     background: linear-gradient(270deg, transparent, rgb(149, 0, 255));
 }
-
-.btn-neon:hover #span3 {
-    right: 100%;
-    transition: 1s;
-    transition-delay: 0.5s;
-}
+.btn-neon:hover #span3 { right: 100%; transition: 1s; transition-delay: .5s; }
 
 #span2 {
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
+    top: -100%; right: 0; width: 2px; height: 100%;
     background: linear-gradient(180deg, transparent, rgb(149, 0, 255));
 }
-
-.btn-neon:hover #span2 {
-    top: 100%;
-    transition: 1s;
-    transition-delay: 0.25s;
-}
+.btn-neon:hover #span2 { top: 100%; transition: 1s; transition-delay: .25s; }
 
 #span4 {
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
+    bottom: -100%; left: 0; width: 2px; height: 100%;
     background: linear-gradient(360deg, transparent, rgb(149, 0, 255));
 }
+.btn-neon:hover #span4 { bottom: 100%; transition: 1s; transition-delay: .75s; }
 
-.btn-neon:hover #span4 {
-    bottom: 100%;
-    transition: 1s;
-    transition-delay: 0.75s;
-}
 
+/* ==================================================================================== */
+/*                                      SECCIÓN ESTUDIOS                                  */
+/* ==================================================================================== */
 
 .estudios {
     height: 100vh;
@@ -163,11 +160,11 @@ video {
     font-size: 30px;
 }
 
-.contenido{
+.contenido {
     text-align: center;
 }
 
-.content-e{
+.content-e, .content-e2 {
     margin-top: 15%;
     width: 35%;
     display: inline-block;
@@ -176,10 +173,13 @@ video {
     border: solid rgba(255, 255, 255, 0.104);
     border-radius: 50px;
     color: white;
+}
+
+.content-e {
     margin-right: 50px;
 }
 
-.content-e h2 {
+.content-e h2, .content-e2 h2 {
     text-align: center;
     font-size: 40px;
     color: rgb(188, 116, 255);
@@ -190,47 +190,29 @@ video {
     font-size: 28px;
     padding-bottom: 8px;
     color: whitesmoke;
-
 }
 
-.datos dt{
-
-    color: rgb(188, 116, 255);
-
-}
-
-.content-e2 {
-    margin-top: 15%;
-    width: 35%;
-    display: inline-block;
-    text-align: left;
-    background-color: #ffffff06;
-    border: solid rgba(255, 255, 255, 0.104);
-    border-radius: 50px;
-    color: white;
-    text-decoration: none;
-}
-
-.content-e2 h2 {
-    text-align: center;
-    font-size: 40px;
+.datos dt {
     color: rgb(188, 116, 255);
 }
 
 .content-e2 a {
-    text-decoration: none;
-    text-decoration-line: underline;
     color: rgb(188, 116, 255);
+    text-decoration-line: underline;
 }
 
 .content-e2 dt {
-    text-decoration: none;
     color: whitesmoke;
 }
 
+
+/* ==================================================================================== */
+/*                                SECCIÓN PROYECTOS / CARRUSEL                           */
+/* ==================================================================================== */
+
 .proyectos {
     height: 100vh;
-    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(214, 214, 214, 1) 100%);
+    background: radial-gradient(circle, #fff 0%, #d6d6d6 100%);
     font-size: 30px;
 }
 
@@ -240,86 +222,153 @@ video {
     overflow: scroll;
 }
 
-.proyecto {
+.proyecto, .proyecto1 {
     flex: 1 0 auto;
-    margin: 0 3px;
-    width: 100vh;
-    background-color: black;
-    height: 100vh;
-}
-
-.proyecto1 {
-    flex: 1 0 auto;
-    margin: 0 5px;
     width: 100vh;
     height: 100vh;
 }
 
-html {
-    background-image: radial-gradient(circle 70vw at 50% 50.2%, rgb(62, 0, 121) 0.1%, rgba(3, 1, 50, 1) 100.2%);
-    color: aliceblue;
-    font-family: Arial, Helvetica, sans-serif;
+.proyecto { background-color: black; }
+.proyecto1 { margin: 0 5px; }
+
+
+/* ==================================================================================== */
+/*                                 SECCIÓN TARJETAS (ESTILOS)                            */
+/* ==================================================================================== */
+
+.section-title {
     text-align: center;
-    line-height: 1.6;
+    margin: 0 0 20px;
+    padding-top: 20px;
 }
 
-h1 {
-    color: #7400e0;
-    font-size: 2.5rem;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
+
+.section-title h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: #b47bff;
+    animation: glow 2.5s ease-in-out infinite alternate;
 }
 
-#titulado,#certificado {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 4%;
-    align-items: flex-start;
+@keyframes glow {
+    from { text-shadow: 0 0 12px #b47bff55; }
+    to { text-shadow: 0 0 28px #d9b5ff; }
+}
+
+.grid {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.card {
     padding: 20px;
+    background: #1a0f29;
+    border-radius: 15px;
+    border: 2px solid #3b2557;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp .8s ease forwards;
 }
 
-.Est,#ADSO {
-    border: 2px solid #a200ff70;
-    background-color: #5700a857;
-    border-radius: 10%;
-    text-align: center;
-    padding: 20px;
-    color: #f5f5f5;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
-    width: 19%;
+.card:nth-child(n) { animation-delay: calc(.1s * var(--i)); }
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(25px); }
+    100% { opacity: 1; transform: translateY(0); }
 }
 
-#ADSO {
-    width: 29%;
-    height: 30%;
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 15px;
+    padding: 2px;
+    background: linear-gradient(45deg, #b47bff, #7a3cff, #c08cff, #9a4dff);
+    filter: blur(8px);
+    opacity: 0;
+    transition: .4s ease;
 }
 
-.Est:hover,#ADSO:hover {
-    transform: scale(1.05);
+.card:hover::before {
+    opacity: .35;
+    filter: blur(12px);
+    background: linear-gradient(45deg, #e9d5ff, #d9c3ff, #ccb6ff, #e6d8ff);
 }
 
-p {
-    color: #d4a2f6;
+.card * {
+    position: relative;
+    z-index: 5;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.015);
+    background: #241433;
+    box-shadow: 0 0 18px rgba(212, 177, 255, 0.25);
+    border-color: #d6b8ff;
+}
+
+.card h2 {
     font-size: 1.2rem;
-    font-weight: bold;
-    margin-top: 10px;
+    color: #fff;
+    margin-bottom: 10px;
 }
 
-a.link {
-    color: #a200ff;
+.card h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #d6c0ff;
+}
+
+.card a {
+    color: #c89bff;
     text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
+    transition: .3s;
 }
 
-a.link:hover {
-    color: #e200ff;
-    text-decoration: underline;
+.card a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #dcb8ff;
 }
 
-#certificado .Est {
-    margin-bottom: 2%;
+.date {
+    margin-top: 15px;
+    font-size: .9rem;
+    color: #b8a2d9;
 }
 
+
+/* ==================================================================================== */
+/*                         BOTÓN FLOTANTE VOLVER (NEÓN MORADO)                           */
+/* ==================================================================================== */
+
+.btn-volver {
+    color: white;
+    position: fixed;      /* ← Esto lo fija en pantalla */
+    top: 20px;            /* ← Lo coloca arriba */
+    left: 20px;           /* ← Lo coloca a la izquierda */
+    padding: 15px 30px;
+    letter-spacing: 2px;
+    font-size: 24px;
+    background-color: #3600693f;
+    text-decoration: none;
+    display: inline-block;
+    overflow: hidden;
+    transition: .1s;
+    margin-left: 0;       /* ← Ya no necesita margin-left */
+    z-index: 9999;        /* Para que quede encima */
+}
+
+.btn-volver:hover {
+    background-color: rgb(137, 43, 226);
+    box-shadow: 0 0 20px rgb(137, 43, 226);
+    transition-delay: 0.1s;
+}
+.btn-volver span {
+    position: absolute;
+    display: block;
+}   

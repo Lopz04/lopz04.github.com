@@ -4,14 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudios</title>
-    <link rel="stylesheet" href="assets/css/estudios.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
-
-    <!-- ========================= -->
-    <!--   ESTUDIOS FORMALES      -->
-    <!-- ========================= -->
     <section class="section-title">
         <h1>Estudios Formales</h1>
     </section>
@@ -132,164 +128,16 @@
         </div>
     </section>
 
-
-</body>
-<a href="index.html" class="btn-neon">
-                    <span id="span1"></span>
-                    <span id="span2"></span>
-                    <span id="span3"></span>
-                    <span id="span4"></span>
-                    ⟵ Volver
+<a href="index.html" class="btn-volver">
+    ⟵ Volver
+    <span id="span1"></span>
+    <span id="span2"></span>
+    <span id="span3"></span>
+    <span id="span4"></span>
 </a>
 
-<!-- ==================================================================================== -->
-<!--                                   ESTILOS + NEÓN                                     -->
-<!-- ==================================================================================== -->
-<style>
-body {
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins", sans-serif;
-    background: #0b0612;
-    color: #e4d7ff;
-}
 
-/* SECCIONES */
-.section-title {
-    text-align: center;
-    margin: 50px 0 20px;
-}
+</body>
 
-.section-title h1 {
-    font-size: 2rem;
-    letter-spacing: 2px;
-    color: #b47bff;
-    animation: glow 2.5s ease-in-out infinite alternate;
-}
-
-@keyframes glow {
-    from { text-shadow: 0 0 12px #b47bff55; }
-    to { text-shadow: 0 0 28px #d9b5ff; }
-}
-
-/* GRID */
-.grid {
-    width: 90%;
-    margin: auto;
-    display: grid;
-    gap: 25px;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-}
-
-/* ==================================================================================== */
-/*                                      TARJETAS                                         */
-/* ==================================================================================== */
-.card {
-    padding: 20px;
-    background: #1a0f29;
-    border-radius: 15px;
-    border: 2px solid #3b2557;
-    position: relative;
-    overflow: hidden;
-
-    /* Animación al aparecer */
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp .8s ease forwards;
-}
-
-/* Aparición escalonada */
-.card:nth-child(1) { animation-delay: .1s; }
-.card:nth-child(2) { animation-delay: .2s; }
-.card:nth-child(3) { animation-delay: .3s; }
-.card:nth-child(4) { animation-delay: .4s; }
-.card:nth-child(5) { animation-delay: .5s; }
-.card:nth-child(6) { animation-delay: .6s; }
-.card:nth-child(7) { animation-delay: .7s; }
-.card:nth-child(8) { animation-delay: .8s; }
-.card:nth-child(9) { animation-delay: .9s; }
-.card:nth-child(10) { animation-delay: 1s; }
-
-@keyframes fadeInUp {
-    0% { opacity: 0; transform: translateY(25px); }
-    100% { opacity: 1; transform: translateY(0); }
-}
-
-/* ========================================= */
-/* EFECTO NEÓN EN BORDES */
-/* ========================================= */
-.card::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 15px;
-    padding: 2px;
-    background: linear-gradient(45deg, #b47bff, #7a3cff, #c08cff, #9a4dff);
-    filter: blur(8px);
-    opacity: 0;
-    transition: .4s ease;
-}
-
-/* Neón suave */
-.card:hover::before {
-    opacity: 0.35; /* Mucho más suave */
-    filter: blur(12px);
-    background: linear-gradient(
-        45deg,
-        #e9d5ff,
-        #d9c3ff,
-        #ccb6ff,
-        #e6d8ff
-    );
-}
-
-
-/* Contenido encima del efecto */
-.card * {
-    position: relative;
-    z-index: 5;
-}
-
-/* ========================================= */
-/* HOVER MEJORADO */
-/* ========================================= */
-.card:hover {
-    transform: translateY(-5px) scale(1.015);
-    background: #241433; /* Morado pastel oscuro, suave */
-    box-shadow: 0 0 18px rgba(212, 177, 255, 0.25); /* Glow suave */
-    border-color: #d6b8ff; /* Borde claro suave */
-}
-
-
-/* TEXTOS */
-.card h2 {
-    font-size: 1.2rem;
-    color: #ffffff;
-    margin-bottom: 10px;
-}
-
-.card h3 {
-    font-size: 1rem;
-    font-weight: 400;
-    color: #d6c0ff;
-}
-
-.card a {
-    color: #c89bff;
-    text-decoration: none;
-    transition: .3s;
-}
-
-.card a:hover {
-    color: #ffffff;
-    text-shadow: 0 0 10px #dcb8ff;
-}
-
-.date {
-    margin-top: 15px;
-    font-size: 0.9rem;
-    color: #b8a2d9;
-}
-</style>
 
 </html>
